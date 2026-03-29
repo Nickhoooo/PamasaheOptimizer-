@@ -1,0 +1,143 @@
+[
+  { 
+    "id": "banaba",
+    "name": "Banaba", 
+    "city": "Caloocan" 
+  },
+  { 
+    "id": "camachile", 
+    "name": "Camachile", 
+    "city": "Caloocan" 
+  },
+  { 
+    "id": "5th-avenue", 
+    "name": "5th Avenue", 
+    "city": "Caloocan" 
+  },
+  { 
+    "id": "monumento", 
+    "name": "Monumento", 
+    "city": "Caloocan" 
+  },
+  { 
+    "id": "quirino-highway", 
+    "name": "Quirino Highway", 
+    "city": "Caloocan" 
+  },
+  { 
+    "id": "rito-batong-bato", 
+    "name": "Rito/Batong Bato", 
+    "city": "Caloocan" 
+  },
+
+  { 
+    "id": "bagong-ilog", 
+    "name": "Bagong Ilog", 
+    "city": "Quezon City" 
+  },
+  { 
+    "id": "balintawak", 
+    "name": "Balintawak", 
+    "city": "Quezon City" 
+  },
+  { 
+    "id": "cubao", 
+    "name": "Cubao", 
+    "city": "Quezon City" 
+  },
+  { 
+    "id": "tandang-sora", 
+    "name": "Tandang Sora", 
+    "city": "Quezon City" 
+  },
+  { 
+    "id": "north avenue", 
+    "name": "North Avenue", 
+    "city":"Quezon City"
+  },
+  { 
+    "id": "nova plaza", 
+    "name": "Nova Plaza", 
+    "city": "Quezon City"
+  },
+  {
+    "id": "jane home",
+    "name": "jane home",
+    "city":"Quezon City"
+  },
+
+  { 
+    "id": "blumentritt", 
+    "name": "Blumentritt", 
+    "city": "Manila" 
+  },
+  { 
+    "id": "divisoria", 
+    "name": "Divisoria", 
+    "city": "Manila" 
+  },
+  { 
+    "id": "quiapo", 
+    "name": "Quiapo", 
+    "city": "Manila" 
+  },
+  { 
+    "id": "taft-avenue", 
+    "name": "Taft Avenue", 
+    "city": "Manila" 
+  },
+
+  { 
+    "id": "pinagbuhatan", 
+    "name": "Pinagbuhatan", 
+    "city": "Pasig" 
+  },
+  { 
+    "id": "ortigas", 
+    "name": "Ortigas", 
+    "city": "Pasig" 
+  },
+  { 
+    "id": "pasig rotonda", 
+    "name": "Pasig Rotonda", 
+    "city": "Pasig" 
+  },
+  { 
+    "id": "rainforest", 
+    "name": "Rainforest", 
+    "city": "Pasig"
+  },
+  { 
+    "id": "pasig palengke", 
+    "name": "Pasig Palengke", 
+    "city": "Pasig"
+  },
+  { 
+    "id": "megamall", 
+    "name": "Megamall", 
+    "city": "Pasig"
+  },
+  {
+    "id": "nico home",
+    "name": "nico home",
+    "city": "Pasig"
+  },
+
+
+  { 
+    "id": "boni", 
+    "name": "Boni", 
+    "city": "Mandaluyong" 
+  },
+  { 
+    "id": "shaw-blvd", 
+    "name": "Shaw Boulevard", 
+    "city": "Mandaluyong" 
+  },
+
+  { 
+    "id": "edsa-taft", 
+    "name": "EDSA-Taft", 
+    "city": "Pasay" 
+  }
+]

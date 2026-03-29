@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+
+.Hero-Home {
+  position: relative; 
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 80%;
+  display: block;
+}
+
+.Hero-overlay {
+  position: absolute;
+  inset: 0; /* same as top/left/right/bottom: 0 */
+  background: linear-gradient(
+    135deg,
+    rgba(10, 25, 50, 0.82) 0%,
+    rgba(20, 45, 80, 0.70) 100%
+  );
+  z-index: 1;
+}
+
+
+    .Home-Content{
+        position: absolute;
+        z-index: 2;    
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        padding: 0 60px;
+        justify-content: center;
+    }
+
+
+    .Left-Content{
+
+    }
+
+    .Home-Title{
+        font-family: 'Sora', sans-serif;
+        font-size: clamp(38px, 5vw, 58px);
+        font-weight: 800;
+        color: #ffffff;
+        line-height: 1.05;
+        margin: 0 0 5px;
+        letter-spacing: -1.5px;
+    }
+
+    .Home-Title span{
+        color: var(--works-accent);
+    }
+
+    .Left-Content p{
+        font-family: 'DM Sans', sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: var(--works-accent);
+        margin: 0;
+    }

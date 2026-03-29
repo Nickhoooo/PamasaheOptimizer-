@@ -1,0 +1,260 @@
+[
+  {
+    "from": "pinagbuhatan",
+    "to": "pasig rotonda",
+    "transport": "jeep",
+    "fare": 13,
+    "duration": 15,
+    "code": "Pasig Jeep"
+  },
+  {
+    "from": "pasig rotonda",
+    "to": "cubao",
+    "transport": "bus",
+    "fare": 25,
+    "duration": 30,
+    "code": "EDSA Bus"
+  },
+  {
+    "from": "cubao",
+    "to": "monumento",
+    "transport": "mrt",
+    "fare": 35,
+    "duration": 20,
+    "code": "MRT Line 3"
+  },
+  {
+    "from": "cubao",
+    "to": "ortigas",
+    "transport": "mrt",
+    "fare": 20,
+    "duration": 10,
+    "code": "MRT Line 3"
+  },
+  {
+    "from": "ortigas",
+    "to": "shaw-blvd",
+    "transport": "mrt",
+    "fare": 13,
+    "duration": 5,
+    "code": "MRT Line 3"
+  },
+  {
+    "from": "shaw-blvd",
+    "to": "edsa-taft",
+    "transport": "mrt",
+    "fare": 28,
+    "duration": 25,
+    "code": "MRT Line 3"
+  },
+  {
+    "from": "quiapo",
+    "to": "divisoria",
+    "transport": "jeep",
+    "fare": 13,
+    "duration": 15,
+    "code": "Quiapo-Divisoria Jeep"
+  },
+  {
+    "from": "edsa-taft",
+    "to": "taft-avenue",
+    "transport": "jeep",
+    "fare": 13,
+    "duration": 10,
+    "code": "Taft Jeep"
+  },
+  {
+    "from": "jane home",
+    "to": "nova plaza",
+    "transport": "trycicle",
+    "fare": 10,
+    "duration": 10,
+    "code": "susano trycicle"
+  },
+  {
+    "from": "nova plaza",
+    "to": "north avenue",
+    "transport": "bus",
+    "fare": 30,
+    "duration": 30,
+    "code": "nova jeep"
+  },
+  {
+    "from": "north avenue",
+    "to": "ortigas",
+    "transport": "mrt",
+    "fare": 20,
+    "duration": 10,
+    "code": "MRT Line 3"
+  },
+  {
+    "from": "megamall",
+    "to": "pasig palengke",
+    "transport": "UV",
+    "fare": 30,
+    "duration": 30,
+    "code": "megamall UV"
+  },
+  {
+    "from": "pasig palengke",
+    "to": "nico home",
+    "transport": "trycicle",
+    "fare": 18,
+    "duration": 20,
+    "code": "pasig palengke trycicle"
+  },
+  {
+    "from": "nico home",
+    "to": "pasig palengke",
+    "transport": "trycicle",
+    "fare": 18,
+    "duration": 20,
+    "code": "pinagbuhatan trycicle"
+  },
+  {
+    "from": "pasig rotonda",
+    "to": "pinagbuhatan",
+    "transport": "jeep",
+    "fare": 13,
+    "duration": 15,
+    "code": "Pasig Jeep"
+  },
+  {
+    "from": "cubao",
+    "to": "pasig rotonda",
+    "transport": "bus",
+    "fare": 25,
+    "duration": 30,
+    "code": "EDSA Bus"
+  },
+  {
+    "from": "monumento",
+    "to": "cubao",
+    "transport": "mrt",
+    "fare": 35,
+    "duration": 20,
+    "code": "MRT Line 3"
+  },
+  {
+    "from": "ortigas",
+    "to": "cubao",
+    "transport": "mrt",
+    "fare": 20,
+    "duration": 10,
+    "code": "MRT Line 3"
+  },
+  {
+    "from": "shaw-blvd",
+    "to": "ortigas",
+    "transport": "mrt",
+    "fare": 13,
+    "duration": 5,
+    "code": "MRT Line 3"
+  },
+  {
+    "from": "edsa-taft",
+    "to": "shaw-blvd",
+    "transport": "mrt",
+    "fare": 28,
+    "duration": 25,
+    "code": "MRT Line 3"
+  },
+  {
+    "from": "divisoria",
+    "to": "quiapo",
+    "transport": "jeep",
+    "fare": 13,
+    "duration": 15,
+    "code": "Quiapo-Divisoria Jeep"
+  },
+  {
+    "from": "taft-avenue",
+    "to": "edsa-taft",
+    "transport": "jeep",
+    "fare": 13,
+    "duration": 10,
+    "code": "Taft Jeep"
+  },
+  {
+    "from": "nova plaza",
+    "to": "jane home",
+    "transport": "trycicle",
+    "fare": 10,
+    "duration": 10,
+    "code": "susano trycicle"
+  },
+  {
+    "from": "north avenue",
+    "to": "nova plaza",
+    "transport": "bus",
+    "fare": 30,
+    "duration": 30,
+    "code": "nova jeep"
+  },
+  {
+    "from": "ortigas",
+    "to": "north avenue",
+    "transport": "mrt",
+    "fare": 20,
+    "duration": 10,
+    "code": "MRT Line 3"
+  },
+  {
+    "from": "pasig palengke",
+    "to": "megamall",
+    "transport": "UV",
+    "fare": 30,
+    "duration": 30,
+    "code": "megamall UV"
+  },
+  {
+    "from": "nico home",
+    "to": "pasig palengke",
+    "transport": "trycicle",
+    "fare": 18,
+    "duration": 20,
+    "code": "pasig palengke trycicle"
+  },
+  {
+    "from": "pasig palengke",
+    "to": "nico home",
+    "transport": "trycicle",
+    "fare": 18,
+    "duration": 20,
+    "code": "pinagbuhatan trycicle"
+  },
+  {
+    "from": "megamall",
+    "to": "ortigas",
+    "transport": "walk",
+    "fare": 0,
+    "duration": 5,
+    "code": "Walking distance"
+  },
+  {
+    "from": "ortigas",
+    "to": "megamall",
+    "transport": "walk",
+    "fare": 0,
+    "duration": 5,
+    "code": "Walking distance"
+  },
+  {
+    "from": "pasig palengke",
+    "to": "rainforest",
+    "transport": "trycicle",
+    "fare": 16,
+    "duration": 20,
+    "code": "pasig palengke trycicle"
+  },
+  {
+    "from": "rainforest",
+    "to": "pasig palengke",
+    "transport": "trycicle",
+    "fare": 16,
+    "duration": 20,
+    "code": "pasig palengke trycicle"
+  }
+
+
+]

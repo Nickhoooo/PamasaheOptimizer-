@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+ 
+/* ─── Main Section ───────────────────────────────────── */
+.Feature-Main {
+    width: 100%;
+    padding: 100px 40px;
+    box-sizing: border-box;
+    background: #a6c6e4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    overflow: hidden;
+}
+ 
+/* ─── Header ─────────────────────────────────────────── */
+.Feature-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 680px;
+}
+ 
+.Feature-eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgb(40, 76, 122);
+    margin: 0 0 14px;
+}
+ 
+.Feature-title {
+    font-family: 'Sora', sans-serif;
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 800;
+    color: #0e1e36;
+    line-height: 1.1;
+    letter-spacing: -1.2px;
+    margin: 0 0 20px;
+}
+ 
+.Feature-title span {
+    color: rgb(40, 76, 122);
+}
+ 
+.Feature-subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #6b7a8d;
+    line-height: 1.7;
+    margin: 0;
+}
+ 
+/* ─── Cards Grid ─────────────────────────────────────── */
+.Feature-cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 28px;
+    width: 100%;
+    max-width: 1050px;
+    flex-wrap: wrap;
+}
+ 
+/* ─── Individual Card ────────────────────────────────── */
+.Feature-card {
+    flex: 1 1 280px;
+    max-width: 320px;
+    background: #ffffff;
+    border: 1px solid #e8eef5;
+    border-radius: 24px;
+    padding: 36px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    box-shadow: 0 2px 16px rgba(40, 76, 122, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    animation: cardFadeUp 0.5s ease both;
+    position: relative;
+    overflow: hidden;
+}
+ 
+.Feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--card-accent, #7ec8f5);
+    border-radius: 24px 24px 0 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+ 
+.Feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 48px rgba(40, 76, 122, 0.14);
+    border-color: rgba(40, 76, 122, 0.15);
+}
+ 
+.Feature-card:hover::before {
+    opacity: 1;
+}
+ 
+@keyframes cardFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+ 
+/* ─── Icon Wrap ──────────────────────────────────────── */
+.Feature-card-icon-wrap {
+    width: 68px;
+    height: 68px;
+    border-radius: 18px;
+    background: rgba(40, 76, 122, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+}
+ 
+.Feature-card:hover .Feature-card-icon-wrap {
+    background: rgba(40, 76, 122, 0.13);
+}
+ 
+.Feature-card-icon-wrap img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+ 
+/* ─── Card Divider ───────────────────────────────────── */
+.Feature-card-line {
+    width: 32px;
+    height: 2px;
+    background: var(--card-accent, #7ec8f5);
+    border-radius: 2px;
+}
+ 
+/* ─── Card Text ──────────────────────────────────────── */
+.Feature-card-title {
+    font-family: 'Sora', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #0e1e36;
+    margin: 0;
+    letter-spacing: -0.3px;
+}
+ 
+.Feature-card-desc {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: 400;
+    color: #6b7a8d;
+    line-height: 1.65;
+    margin: 0;
+}
+ 
+/* ─── Responsive ─────────────────────────────────────── */
+@media (max-width: 768px) {
+    .Feature-Main {
+        padding: 70px 24px;
+        gap: 44px;
+    }
+ 
+    .Feature-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .Feature-card {
+        max-width: 100%;
+        width: 100%;
+    }
+}

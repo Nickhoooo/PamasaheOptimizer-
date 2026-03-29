@@ -1,0 +1,39 @@
+.Header-Main {
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 10px 20px 10px rgba(8, 0, 0, 0.1);
+    position: sticky;   
+    top: 0;           
+    z-index: 100;     
+    background-color: rgb(255, 255, 255);  
+}
+
+    .Header-Main img{
+        width: 40px;
+    }
+
+    nav{
+        display: flex;
+        gap: 50px;
+        margin-left: 50px;
+    }
+
+    nav a{
+        font-size: 19px;
+        text-decoration: none;
+        font-family: poppins;
+        font-weight: 500;
+        color: black;
+    }
+    .Menu{
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Menu img{
+        width: 35px;
+        margin-right: 30px;
+    }
