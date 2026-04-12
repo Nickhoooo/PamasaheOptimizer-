@@ -72,3 +72,50 @@
   opacity: 0.7;
   font-weight: 400;
 }
+
+@media (max-width: 768px) {
+    .SecondaryNav {
+        max-width: 100%;
+    }
+
+    .SecondaryNav-tab {
+        padding: 12px 8px;
+        gap: 6px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tab-icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+    }
+
+    .tab-text {
+        align-items: center;
+    }
+
+    .tab-label {
+        font-size: 0.75rem;
+    }
+
+    .tab-desc {
+        display: none;
+    }
+}
+
+@media (max-width: 380px) {
+    .SecondaryNav-tab {
+        padding: 10px 4px;
+    }
+
+    .tab-label {
+        font-size: 0.65rem;
+    }
+
+    .tab-icon {
+        width: 28px;
+        height: 28px;
+    }
+}

@@ -198,6 +198,11 @@
   filter: drop-shadow(0 20px 60px rgba(0, 0, 0, 0.5));
   animation: floatImg 4s ease-in-out infinite;
 }
+.Works-team-video {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+}
  
 @keyframes floatImg {
   0%, 100% { transform: translateY(0px); }

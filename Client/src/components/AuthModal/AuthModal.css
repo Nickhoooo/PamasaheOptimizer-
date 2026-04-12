@@ -1,0 +1,203 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    animation: fadeIn 0.2s ease;
+}
+ 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+ 
+/* Modal card */
+.modal-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 36px;
+    width: 100%;
+    max-width: 420px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    animation: slideUp 0.25s ease;
+}
+ 
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+ 
+/* Close button */
+.modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #9ca3af;
+    line-height: 1;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+ 
+.modal-close:hover {
+    background-color: #f3f4f6;
+    color: #374151;
+}
+ 
+/* Tabs */
+.modal-tabs {
+    display: flex;
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    padding: 4px;
+    margin-bottom: 28px;
+}
+ 
+.modal-tab {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: none;
+    border-radius: 8px;
+    font-family: poppins;
+    font-size: 15px;
+    font-weight: 500;
+    color: #6b7280;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+ 
+.modal-tab.active {
+    background-color: #ffffff;
+    color:rgb(51, 90, 141);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+ 
+/* Form */
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+ 
+.modal-title {
+    font-family: poppins;
+    font-size: 22px;
+    font-weight: 600;
+    color: #111827;
+    margin: 0 0 4px 0;
+}
+ 
+.modal-subtitle {
+    font-family: poppins;
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0 0 20px 0;
+}
+ 
+/* Form group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+ 
+.form-group label {
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+}
+ 
+.form-group input {
+    padding: 11px 14px;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 8px;
+    font-family: poppins;
+    font-size: 14px;
+    color: #111827;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+ 
+.form-group input:focus {
+    border-color:rgb(51, 90, 141);
+}
+ 
+.form-group input::placeholder {
+    color: #9ca3af;
+}
+ 
+/* Forgot password */
+.form-footer-link {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 4px;
+}
+ 
+.form-footer-link span {
+    font-family: poppins;
+    font-size: 13px;
+    color: rgb(51, 90, 141);
+    cursor: pointer;
+}
+ 
+.form-footer-link span:hover {
+    text-decoration: underline;
+}
+ 
+/* Submit button */
+.modal-submit-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background-color: rgb(51, 90, 141);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-family: poppins;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+ 
+.modal-submit-btn:hover {
+    background-color: rgb(51, 90, 141);
+}
+ 
+/* Switch tab link */
+.modal-switch {
+    font-family: poppins;
+    font-size: 13px;
+    color: #6b7280;
+    text-align: center;
+    margin-top: 12px;
+}
+ 
+.modal-switch span {
+    color: rgb(51, 90, 141);
+    font-weight: 500;
+    cursor: pointer;
+}
+ 
+.modal-switch span:hover {
+    text-decoration: underline;
+}
+ 
+/* Mobile */
+@media (max-width: 480px) {
+    .modal-card {
+        margin: 16px;
+        padding: 24px;
+    }
+}

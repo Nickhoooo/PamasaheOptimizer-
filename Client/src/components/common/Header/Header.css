@@ -4,36 +4,216 @@
     align-items: center;
     padding: 20px;
     box-shadow: 10px 20px 10px rgba(8, 0, 0, 0.1);
-    position: sticky;   
-    top: 0;           
-    z-index: 100;     
-    background-color: rgb(255, 255, 255);  
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
 }
 
-    .Header-Main img{
-        width: 40px;
+.Header-Main img {
+    width: 40px;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+    margin-left: 50px;
+}
+
+nav a {
+    font-size: 19px;
+    text-decoration: none;
+    font-family: poppins;
+    font-weight: 500;
+    color: black;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: rgb(51, 90, 141);
+}
+
+.Main-Menu {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+
+.Menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Menu img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.auth-buttons {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    z-index: 200;
+}
+
+.auth-buttons.active {
+    display: flex;
+}
+
+.User-Pf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.User-Pf img {
+    width: 30px;
+}
+
+.Login-button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: 500;
+    border: 2px solid #274483;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #285c8d;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.Login-button:hover {
+    background-color: rgb(51, 90, 141);
+    color: #ffff;
+}
+
+.Register-button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(51, 90, 141);
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.Register-button:hover {
+    background-color: rgb(45, 68, 99);
+}
+
+.user-name {
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(51, 90, 141);
+}
+
+.Logout-button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: poppins;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    background-color: #ef4444;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.Logout-button:hover {
+    background-color: #dc2626;
+}
+
+.modal-error {
+    color: #dc2626;
+    font-family: poppins;
+    font-size: 10px;
+    text-decoration-line: underline;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+
+
+/* ✅ Mobile */
+@media (max-width: 768px) {
+
+    .Header-Main {
+        padding: 12px 16px;
     }
 
-    nav{
+    /* Nav links nagtitago — may hamburger menu na */
+    nav {
+        display: none;
+    }
+
+    .Menu img {
+        margin-right: 0;
+    }
+
+    /* Auth buttons dropdown — may nav links na rin! */
+    .auth-buttons {
+        right: -8px;
+        min-width: 180px;
+    }
+
+    /* ✅ I-add ang About at Feature sa dropdown! */
+    .auth-buttons .nav-mobile {
         display: flex;
-        gap: 50px;
-        margin-left: 50px;
+        flex-direction: column;
+        gap: 4px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        padding-bottom: 8px;
+        margin-bottom: 4px;
     }
 
-    nav a{
-        font-size: 19px;
-        text-decoration: none;
+    .auth-buttons .nav-mobile a {
         font-family: poppins;
+        font-size: 14px;
         font-weight: 500;
-        color: black;
+        color: #285c8d;
+        text-decoration: none;
+        padding: 8px 12px;
+        border-radius: 8px;
+        transition: background-color 0.2s;
     }
-    .Menu{
-        margin-left: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+    .auth-buttons .nav-mobile a:hover {
+        background-color: #f0f5fb;
     }
-    .Menu img{
-        width: 35px;
-        margin-right: 30px;
+
+    .user-name {
+        font-size: 12px;
     }
+
+    .Login-button,
+    .Register-button,
+    .Logout-button {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+}

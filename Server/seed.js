@@ -1,10 +1,11 @@
+require('dotenv').config()
 const mongoose = require('mongoose');
 const Stop = require('./models/Stop');
 const Route = require('./models/Route');
 const stops = require('./data/stops.json');
 const routes = require('./data/routes.json');
 
-mongoose.connect('mongodb://localhost:27017/pamasahe')
+mongoose.connect(process.env.MONGO_URI)
     .then(async () => {
         console.log('connecting: seeding data...')
 

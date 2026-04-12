@@ -1,8 +1,10 @@
 import "../NavBar/css/PlanMyTrip.css";
 import CityVids from "../../../assets/city-skyline-animate.svg";
 import { useState } from "react";
+import { useAuth } from "../../../context/AuthContext"
 
 function PlanMyTrip() {
+  const { token } = useAuth()
   const [from, setFrom] = useState("");
   const [to, setTo] = useState("");
   const [result, setResult] = useState(null);
@@ -16,14 +18,32 @@ function PlanMyTrip() {
     setResult(null);
     try {
       const response = await fetch(
-        `http://localhost:5000/api/routes?from=${from}&to=${to}`
+        `${import.meta.env.VITE_API_URL}/api/routes?from=${from}&to=${to}`
       );
       const data = await response.json();
       if (!data.found) {
         setError("Walang nahanap na route. Subukan ng ibang destination!");
       } else {
         setResult(data);
+
+        if (token) {
+          await fetch(`${import.meta.env.VITE_API_URL}/api/history`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${token}`
+            },
+            body: JSON.stringify({
+              from,
+              to,
+              fare: data.totalFare,
+              transportMode: data.path.map(step => step.transport).join(", ")
+            })
+          })
+        }
       }
+
+
     } catch (err) {
       setError("Hindi ma-reach ang server. Baka hindi pa naka-run ang backend!");
     }

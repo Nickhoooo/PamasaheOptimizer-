@@ -1,6 +1,6 @@
 import "../HowItwork/HowItwork.css";
 import BgVids from "../../../assets/6574230-hd_1280_720_25fps.mp4";
-import ImgHowWork from "../../../assets/erasebg-transformed.png";
+import TeamWork from "../../../assets/team-work-animate.svg";
 
 const steps = [
   { num: "01", label: "Enter Your Route", desc: "Type your starting point and destination." },
@@ -44,7 +44,7 @@ function HowItwork() {
         {/* Right Side */}
         <div className="Works-Right">
           <div className="Works-img-wrap">
-            <img src={ImgHowWork} alt="How Pamasahe Optimizer works" />
+            <img src={TeamWork} alt="How Pamasahe Optimizer works" />
             {/* Floating badge */}
           
           </div>

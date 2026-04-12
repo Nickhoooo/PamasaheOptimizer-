@@ -1,0 +1,136 @@
+/* Overlay */
+.notif-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: fadeIn 0.2s ease;
+}
+
+/* Modal card */
+.notif-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 32px;
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    animation: slideUp 0.3s ease;
+    position: relative;
+    margin: 16px;
+}
+
+/* Icon circle */
+.notif-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    font-size: 28px;
+}
+
+.notif-overlay.success .notif-icon {
+    background-color: #dcfce7;
+}
+
+.notif-overlay.error .notif-icon {
+    background-color: #fef2f2;
+}
+
+/* Title */
+.notif-title {
+    font-family: poppins;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.notif-overlay.success .notif-title {
+    color: #16a34a;
+}
+
+.notif-overlay.error .notif-title {
+    color: #dc2626;
+}
+
+/* Message */
+.notif-message {
+    font-family: poppins;
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+/* Close button */
+.notif-close-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    color: #ffffff;
+}
+
+.notif-overlay.success .notif-close-btn {
+    background-color: #22c55e;
+}
+
+.notif-overlay.success .notif-close-btn:hover {
+    background-color: #16a34a;
+}
+
+.notif-overlay.error .notif-close-btn {
+    background-color: #ef4444;
+}
+
+.notif-overlay.error .notif-close-btn:hover {
+    background-color: #dc2626;
+}
+
+/* Top accent bar */
+.notif-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    border-radius: 16px 16px 0 0;
+}
+
+.notif-overlay.success .notif-card::before {
+    background-color: #22c55e;
+}
+
+.notif-overlay.error .notif-card::before {
+    background-color: #ef4444;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { 
+        opacity: 0; 
+        transform: translateY(30px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}

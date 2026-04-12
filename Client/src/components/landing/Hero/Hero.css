@@ -32,7 +32,7 @@
     position: absolute;
     right: 680px;   
     bottom: 280px;   
-    z-index: 999;
+  
 }
 
     /*Hero Left*/
@@ -82,3 +82,66 @@
 
 
 
+/* ✅ Mobile responsive — Hero */
+@media (max-width: 768px) {
+
+    .Hero-Main {
+        height: auto;
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 20px 80px;
+        text-align: center;
+    }
+
+    .Hero-Left {
+        width: 100%;
+    }
+
+    .Hero-Left h1 {
+        font-size: 26px;
+    }
+
+    .Hero-Left p {
+        font-size: 13px;
+    }
+
+    #GetStart {
+        width: 130px;
+        height: 32px;
+        font-size: 12px;
+        margin: 15px auto 0;
+        display: block;
+    }
+
+    .Hero-Right {
+        width: 220px;
+        height: 200px;
+    }
+
+    .Hero-Right img {
+        width: 180px;
+        top: -15px;
+    }
+
+    #ChatIcon {
+        width: 30px;
+        right: auto;
+        left: 120px;
+        bottom: 190px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Hero-Left h1 {
+        font-size: 22px;
+    }
+
+    .Hero-Right {
+        width: 180px;
+        height: 160px;
+    }
+
+    .Hero-Right img {
+        width: 150px;
+    }
+}

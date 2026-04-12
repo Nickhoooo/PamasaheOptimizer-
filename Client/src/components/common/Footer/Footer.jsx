@@ -69,8 +69,8 @@ function Footer() {
 
             {/* Bottom Bar */}
             <div className="Footer-bottom">
-                <p className="Footer-copy">© {new Date().getFullYear()} PamasaheOptimizer. All rights reserved.</p>
-                <p className="Footer-made">Made with ❤️ for Filipino commuters</p>
+                <p className="Footer-copy">©nico {new Date().getFullYear()} PamasaheOptimizer. All rights reserved.</p>
+                <p className="Footer-made">Made with Love for Filipino commuters</p>
             </div>
         </div>
     );
