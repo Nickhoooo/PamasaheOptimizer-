@@ -8,7 +8,7 @@ const app = express()
 app.use(cors({
     origin: [
         "http://localhost:5173",
-        "https://iyong-app.vercel.app"  // ← palitan natin later
+        "https://pamasaheoptimizer.onrender.com"  // ← palitan natin later
     ],
     credentials: true
 }))
