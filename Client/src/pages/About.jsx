@@ -80,7 +80,7 @@ function About() {
                     <p>
                         We know how stressful commuting can be in the Philippines. 
                         Long queues, confusing routes, and unexpected fares are part of daily life.
-                        That's why we built Pamasahe Optimizer — to take the guesswork out of commuting.
+                        That's why we built Pamasahe Optimizer to take the guesswork out of commuting.
                     </p>
                     <p>
                         Whether you're taking the jeep, UV Express, MRT, or bus — 
