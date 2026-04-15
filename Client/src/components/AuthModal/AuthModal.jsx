@@ -70,7 +70,7 @@ function AuthModal({ isOpen, onClose, activeTab, setActiveTab }) {
       onClose()
 
     } catch (error) {
-      setError("Something went wrong please try again")
+      setError("Something went wrong please try again.")
     } finally {
       setLoading(false)
     }
